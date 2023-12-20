@@ -1,0 +1,7 @@
+[package]
+name = "ply"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ply = {version='*', package='ply-rs'}
