@@ -5,3 +5,7 @@ edition = "2021"
 
 [dependencies]
 ply = {version='*', package='ply-rs'}
+
+[patch.'crates-io']
+ply = {git='https://github.com/Matthias-Fauconneau/ply-rs', package='ply-rs'}
+#ply = {path='../ply-rs', package='ply-rs'}

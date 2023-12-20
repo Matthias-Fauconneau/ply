@@ -44,7 +44,7 @@ fn main() {
 				encoding: Encoding::BinaryLittleEndian,
 				elements: [
 					("vertex".to_string(), ElementDef{name: "vertex".to_string(), count: 0, properties: ["x","y","z"].iter().map(|k| (k.to_string(), PropertyDef::new(k.to_string(), PropertyType::Scalar(ScalarType::Float)))).into_iter().collect()}),
-					("face".to_string(), ElementDef{name: "face".to_string(), count: 0, properties: [("vertex_indices".to_string(), PropertyDef::new("vertex_indices".to_string(), PropertyType::List(ScalarType::UInt, ScalarType::UInt)))].into_iter().collect()}),
+					("face".to_string(), ElementDef{name: "face".to_string(), count: 0, properties: [("vertex_indices".to_string(), PropertyDef::new("vertex_indices".to_string(), PropertyType::List(ScalarType::UChar, ScalarType::UInt)))].into_iter().collect()}),
 				].into_iter().collect(),
 				..Header::new()
 			},
