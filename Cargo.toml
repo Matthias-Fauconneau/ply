@@ -5,7 +5,9 @@ edition = "2021"
 
 [dependencies]
 ply = {version='*', package='ply-rs'}
+vector = {git='https://github.com/Matthias-Fauconneau/vector', features = ['unstable']}
 
 [patch.'crates-io']
 ply = {git='https://github.com/Matthias-Fauconneau/ply-rs', package='ply-rs'}
-#ply = {path='../ply-rs', package='ply-rs'}
+[patch.'https://github.com/Matthias-Fauconneau/vector']
+vector = {path='../vector'}
